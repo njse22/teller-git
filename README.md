@@ -19,7 +19,7 @@ git init
 git add --all
 git commit -m "upload my proyect"
 git branch -M main
-git remote add origin git@github.com:nombreUsuario/nombreProyecto.git
+git remote add origin https://github.com/NombreDeUsuario/NombreRepositorio.git
 git push -u origin main
 ```
 
