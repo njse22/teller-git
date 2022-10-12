@@ -72,7 +72,7 @@ git config --global user.email "your_email@example.com"
 Donde deberá especificar el correo electronico con el que creo su cuenta de GitHub
 
 ```bash
-git config --global user.email "your_user_name"
+git config --global user.name "your_user_name"
 ```
 
 Donde deberá especificar su nombre de usuario en git
