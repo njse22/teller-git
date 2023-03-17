@@ -1,16 +1,10 @@
 # taller-git
 
-Desde [GitHub](https://github.com/) cree un repositorio, con el boton que esta al lado izquierdo de la página, como se ve en la figura de abajo para su tarea integradora 2. 
+Desde [GitHub](https://github.com/) cree un repositorio, con el boton que esta al lado izquierdo de la página, como se ve en la figura de abajo para su trabajo. 
 
-![](/home/i2t/.config/marktext/images/2022-10-06-22-32-22-image.png)
+Recuerde, como recomendación, ponerle un nombre que sea diciente de lo que representa el proyecto, o que este relacionado al problema que esta resolviendo.
 
-Recuerde, como recomendación, ponerle un nombre que sea diciente de lo que representa el proyecto; siga los pasos de la imagen.
-
-![](/home/i2t/.config/marktext/images/2022-10-06-22-39-20-image.png)
-
-Desde este punto en su computador vaya a la carpeta donde esta su proyecto (tarea integradora) la cual debería tener la siguiente estructura de archivos: 
-
-![](/home/i2t/.config/marktext/images/2022-10-06-22-42-31-image.png)
+Desde este punto en su computador vaya a la carpeta donde esta su proyecto.
 
 dentro de esa carpeta habra su cliente de git (el cual puede ser, powershell, cmd, gitbash, etc...) y escriba los siguientes comandos: 
 
@@ -23,7 +17,7 @@ git remote add origin https://github.com/NombreDeUsuario/NombreRepositorio.git
 git push -u origin main
 ```
 
-Revisemos cada uno: 
+## Revisemos cada uno: 
 
 1. ```bash
    git init
@@ -86,15 +80,14 @@ git push -u origin main
 Una vez hecho esto, en el caso de windows aparecerá una ventana que le pedirá que ingrese su nombre de usuario y contraseña, en el caso de Mac se los pedira por la terminal de comandos. 
 
 
-
-Una vez hecho esto usted podrá subir mas cambios en su código al repositorio, por ejemplo, agreguemos el método `toString()` a la clase `Player` 
+Una vez hecho esto usted podrá subir mas cambios en su código al repositorio, por ejemplo, agreguemos el método `toString()` a una clase `Person` 
 
 ```java
 public String toString(){
     return 
-        "Nombre de Usuario: " + nickName + "\n"
-        "Puntaje actual: " + score + "\n"
-        "Nivel actual: " + level + "\n";
+        "Nombre : " + name + "\n"
+        "Cedula : " + cc + "\n"
+        "Edad : " + years + "\n";
 }
 ```
 
@@ -102,7 +95,7 @@ Luego de agregar este método vamos a nuestro cliente de git y hacemos:
 
 ```bash
 git add --all 
-git commit -m "Upload toString() in class player"
+git commit -m "Upload toString() in class Person"
 git push
 ```
 
